@@ -42,15 +42,19 @@ header {
 }
 
 .header-rightdiv-menu0 {
-    display: none;
+    display: block;
     flex-direction: column;
     position: absolute;
     height: 100%;
     top: 0px;
-    left: 0px;
+    left: -510px;
     background-color: white;
-    width: 29vw;
+    width: 418px;
     padding-right: 10px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.349);
+    z-index: 1;
+    visibility: hidden;
+    transition: .5s left, 0s visibility .55s;
 }
 
 .header-rightdiv-menu0-div {
@@ -85,8 +89,9 @@ header {
 
 #menu0-input:checked ~ .header-rightdiv-menu0 {
     display: flex;
-    z-index: 1;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.349);
+    left: 0px;
+    visibility: visible;
+    transition: .7s left,  0s visibility 0s;
 }
 
 header:has(#menu0-input:checked) {
@@ -488,6 +493,10 @@ section {
 }
 
 @media (max-width: 1157px) {
+    .header-rightdiv-menu0 {
+        width: 400px;
+    }
+
     .othertopics-div-link {
         width: 200px;
     }
@@ -580,6 +589,25 @@ section {
 }
 
 @media (max-width: 500px) {
+    .header-rightdiv-menu0 {
+        width: 98vw;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .header-rightdiv-menu0-div-item {
+        font-size: 1.3em;
+    }
+
+    header:has(#menu0-input:checked) #back {
+        display: none;
+    }
+
+    #back {
+        display: none;
+    }
+
     .header-rightdiv {
         gap: 19px;
     }
@@ -621,7 +649,11 @@ section {
     }
 
     nav {
-        font-size: .9em;
+        font-size: 1.1em;
+    }
+
+    .menu-item {
+        font-weight: 300;
     }
 
     .header-buttonlabel-image {
@@ -646,6 +678,10 @@ section {
 
     .header-searchbox-label:hover > .header-image {
         left: 35px;
+    }
+
+    .footer-paragraph  {
+        padding-block: 5px;
     }
 }
 
