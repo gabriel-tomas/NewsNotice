@@ -1,0 +1,80 @@
+@import url("style.css");
+
+.section0 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-inline: 27px;
+    gap: 35px 20px;
+}
+
+.section0-title-economy {
+    width: 100%;
+    margin-inline: -27px;
+}
+
+.section0-div0 {
+    width: 58%;
+}
+
+.section0-div0-article {
+    margin-top: 15px;
+}
+
+.section0-div0-article-image {
+    width: 100%;
+}
+
+.section0-div0-article-title {
+    font-family: "Source Serif Pro", serif;
+    font-weight: 600;
+    font-size: 1.45em;
+}
+
+.section0-div1 {
+    width: 38%;
+}
+
+.section0-div1-article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 0px 10px;
+    align-items: center;
+}
+
+.section0-div1-article-image {
+    max-width: 44%; 
+}
+
+.section0-div1-article-title {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 1.18em;
+}
+
+.section0-div2-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section0-div2-article-image {
+    max-width: 270px;
+    margin-right: 10px;
+}
+
+.section0-div2-article-content {
+    width: 44%;
+}
+
+.section0-div2-article-content-title {
+    font-family: "Source Serif Pro", serif;
+    font-weight: 600;
+}
+
+.section0-div2-article-content-paragraph {
+    font-family: "Source Sans 3", sans-serif;
+    margin-top: 10px;
+}
