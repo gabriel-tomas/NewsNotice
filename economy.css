@@ -5,7 +5,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-inline: 27px;
-    gap: 35px 20px;
+    gap: 0px 20px;
 }
 
 .section0-title-economy {
@@ -15,6 +15,9 @@
 
 .section0-div0 {
     width: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
 }
 
 .section0-div0-article {
@@ -33,12 +36,15 @@
 
 .section0-div1 {
     width: 38%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0px;
 }
 
 .section0-div1-article {
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
     gap: 0px 10px;
     align-items: center;
 }
@@ -47,10 +53,21 @@
     max-width: 44%; 
 }
 
-.section0-div1-article-title {
+.section0-div1-article-content-title {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;
     font-size: 1.18em;
+}
+
+.section0-div1-article-content-paragraph {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.1em;
+    display: none;
+}
+
+.section0-div2 {
+    margin-top: 15px;
+    width: 70%;
 }
 
 .section0-div2-article {
@@ -65,10 +82,6 @@
     margin-right: 10px;
 }
 
-.section0-div2-article-content {
-    width: 44%;
-}
-
 .section0-div2-article-content-title {
     font-family: "Source Serif Pro", serif;
     font-weight: 600;
@@ -77,4 +90,184 @@
 .section0-div2-article-content-paragraph {
     font-family: "Source Sans 3", sans-serif;
     margin-top: 10px;
+}
+
+.section0-aside {
+    width: 26%;
+    border-left: 1px solid var(--row-color);
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.section0-aside-article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--row-color);
+    padding-bottom: 10px;
+}
+
+.section0-aside-article-title {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.section0-aside-article-image {
+    height: 100%;
+    width: 100px;
+}
+
+.section0-aside-article-noborder {
+    border: none;
+}
+
+
+@media (max-width: 1187px) {
+    article {
+        font-size: .9em;
+    }
+ 
+    .section0-div2-article-content-paragraph {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 1096px) {
+    .section0-div2 {
+        width: 100%;
+    }
+
+    .section0-aside {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px 10px;
+        border-left: none;
+        border-top: 1px solid var(--row-color);
+        padding-top: 20px;
+    }
+
+    .section0-aside-article {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1085px) {
+    article {
+        font-size: .85em;
+    }
+
+    .section0-div1 {
+        font-size: .89em;
+    }
+}
+
+@media (max-width: 950px) {
+    .section0-aside {
+        gap: 0px 100px;
+    }
+
+    .section0-aside-article {
+        width: 350px;
+    }
+}
+
+@media (max-width: 927px) {
+    .section0-div1 {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 891px) {
+    .section0-aside {
+        gap: 0px 70px;
+    }
+
+    .section0-aside-article {
+        width: 300px;
+    }
+}
+
+@media (max-width: 849px) {
+    .section0 > div {
+        width: 100%;
+    }
+
+    .section0-div0 {
+        gap: 5px 0px;
+    }
+
+    .section0-div1-article-content-title {
+        font-size: 1.8em;
+        font-family: "Source Serif Pro", serif;
+    }
+
+    .section0-div1-article-content-paragraph {
+        display: block;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 760px) {
+    .section0-aside {
+        gap: 0px 50px;
+    }
+
+    .section0-aside-article {
+        width: 250px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section0-div1 {
+        display: flex;
+        font-size: .7em;
+        gap: 10px 0px;
+    }
+
+    .section0-div1-article-content-paragraph {
+        font-size: 1.55em;
+        text-align: justify;
+    }
+
+    .section0-div2-article-image {
+        width: 44%;
+    }
+    
+    .section0-div2-article-content-paragraph {
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    .section0-aside {
+        gap: 0px 30px;
+    }
+
+    .section0-aside-article {
+        width: 250px;
+    }
+}
+
+@media (max-width: 620px) {
+    .section0-div1-article-content-title, .section0-div2-article-content-title {
+        display: none;
+    }
+
+    .section0-aside {
+        gap: 0px 20px;
+    }
+
+    .section0-aside-article {
+        width: 230px;
+    }
+}
+
+@media (max-width: 571px) {
+    .section0-aside-article {
+        width: 100%;
+    }
 }
