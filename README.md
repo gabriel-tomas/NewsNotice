@@ -10,6 +10,8 @@ Usei CSS pra fazer algumas animações no menu usando transition e keyframes, fl
 
 Vários outros conceitos foram usados que podem ser visto no código.
 
+O Figma foi usado para fazer o wireframe, [clique aqui](https://www.figma.com/file/zhSKQqIUrlpLIxgqZpUcau/NewsNotice?t=Zc1YJe5yTy83AjC9-0) se deseja ver o wireframe do projeto.
+
 ## Capturas de tela
 ![index image](images/readme-images/main-page.png)
 
