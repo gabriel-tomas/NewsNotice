@@ -1,0 +1,125 @@
+@import url("style.css");
+
+body {
+    background-color: #DDDDDD;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 100px;
+    align-items: center;
+    height: 100vh;
+}
+
+.divleft-title {
+    font: 80px "Newsreader", serif;
+}
+
+.divleft-paragraph {
+    font: 28px "Newsreader", serif;
+    width: 50%;
+    margin-top: 12px;
+    margin-left: 10px;
+    line-height: 36px;
+}
+
+.divright {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    border-radius: 6px;
+    width: 45%;
+    box-shadow: -8px 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.divright-title {
+    font: bold 30px "Newsreader", serif;
+    color: #383E92;
+    margin-bottom: 35px;
+    margin-left: -16px;
+}
+
+.divright-label {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+}
+
+.divright-inputsign {
+    border: none;
+    border-bottom: 1px solid var(--row-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1em;
+    outline: none;
+    transition: .7s background-color;
+}
+
+.divright-termsconditions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 0px 3px;
+}
+
+.divright-termsconditions-paragraph {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: .95em;
+}
+
+.divright-button {
+    background-color: var(--color2-hover);
+    border: none;
+    margin-top: 15px;
+    margin-inline: 30px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+    padding-block: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.divright-paragraph {
+    align-self: center;
+    margin-top: 20px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.divright-paragraph-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1200px) {
+    main {
+        margin-inline: 0;
+        justify-content: center;
+    }
+    
+    .divleft {
+        display: none;
+    }
+
+    .divright {
+        width: 100vw;
+        max-width: 406px;
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        height: fit-content;
+    }
+
+    .divright {
+        height: 100vh;
+        gap: 5px;
+        border-radius: 0px;
+    }
+}
