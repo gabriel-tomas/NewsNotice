@@ -613,8 +613,10 @@ section {
         display: none;
     }
 
-    body:has(#menu0-input:checked) {
+    body:has(#menu0-input:checked) main {
         height: 100vh;
+        visibility: hidden;
+        transition: 0s visibility .7s;
     }
 
     #back {
