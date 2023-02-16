@@ -12,11 +12,11 @@ main {
     height: 100vh;
 }
 
-.divleft-title {
+.divtext-title {
     font: 80px "Newsreader", serif;
 }
 
-.divleft-paragraph {
+.divtext-paragraph {
     font: 28px "Newsreader", serif;
     width: 50%;
     margin-top: 12px;
@@ -24,7 +24,7 @@ main {
     line-height: 36px;
 }
 
-.divright {
+.divnnaccount {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -34,19 +34,19 @@ main {
     box-shadow: -8px 20px 50px rgba(0, 0, 0, 0.25);
 }
 
-.divright-title {
+.divnnaccount-title {
     font: bold 30px "Newsreader", serif;
     color: #383E92;
     margin-bottom: 35px;
     margin-left: -16px;
 }
 
-.divright-label {
+.divnnaccount-label {
     font-family: "Source Sans 3", sans-serif;
     font-size: 18px;
 }
 
-.divright-inputsign {
+.divnnaccount-inputsign {
     border: none;
     border-bottom: 1px solid var(--row-color);
     margin-top: 10px;
@@ -58,19 +58,19 @@ main {
     transition: .7s background-color;
 }
 
-.divright-termsconditions {
+.divnnaccount-termsconditions-rememberme-frgtpassword {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     gap: 0px 3px;
 }
 
-.divright-termsconditions-paragraph {
+.divnnaccount-termsconditions-rememberme-frgtpassword-paragraph {
     font-family: "Source Sans 3", sans-serif;
     font-size: .95em;
 }
 
-.divright-button {
+.divnnaccount-button {
     background-color: var(--color2-hover);
     border: none;
     margin-top: 15px;
@@ -84,17 +84,50 @@ main {
     cursor: pointer;
 }
 
-.divright-paragraph {
+.divnnaccount-paragraph {
     align-self: center;
     margin-top: 20px;
     font-family: "Source Sans 3", sans-serif;
 }
 
-.divright-paragraph-link {
+.divnnaccount-paragraph-link {
     text-decoration: none;
     font-weight: 500;
 }
 
+.main-sign-in {
+    justify-content: center;
+}
+
+.divnnaccount-sign-in {
+    max-width: 420px;
+    align-self: center;
+    padding: 40px 53px;
+}
+
+.divnnaccount-title-sign-in {
+    margin-bottom: 60px;
+}
+
+.divnnaccount-rememberme-box {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 3px;
+}
+
+.divnnaccount-termsconditions-rememberme-frgtpassword-sign-in {
+    justify-content: space-between;
+}
+
+.divnnaccount-termsconditions-rememberme-frgtpassword-link {
+    font-family: "Source Sans 3", sans-serif;
+    text-decoration: none;
+    font-size: .95em;
+}
+
+.divnnaccount-button-sign-in {
+    margin-top: 50px;
+}
 
 @media (max-width: 1200px) {
     main {
@@ -102,11 +135,11 @@ main {
         justify-content: center;
     }
     
-    .divleft {
+    .divtext {
         display: none;
     }
 
-    .divright {
+    .divnnaccount {
         width: 100vw;
         max-width: 406px;
     }
@@ -118,9 +151,30 @@ main {
         background-color: white;
     }
 
-    .divright {
+    .divnnaccount {
         border-radius: 0px;
         box-shadow: none;
         padding: 30px 50px;
+    }
+}
+
+@media (max-height: 520px) {
+    .divnnaccount {
+        height: 420px;
+    }
+
+    .divnnaccount-title {
+        margin-bottom: 15px;
+    }
+
+    .divnnaccount-inputsign {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .divnnaccount {
+        padding: 30px 25px;
     }
 }
