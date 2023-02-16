@@ -82,6 +82,10 @@ header {
     transition: .2s box-shadow, .3s margin-left;
 }
 
+.header-rightdiv-menu0-div-item-pdng {
+    margin-bottom: 50px;
+}
+
 .header-rightdiv-menu0-div-item:hover {
     box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.24);
     margin-left: 5px;
@@ -116,6 +120,7 @@ body:has(#menu0-input:checked) main {
     filter: brightness(40%);
     background-color: rgba(0, 0, 0, 0.6);
     pointer-events: none;
+    overflow-y: hidden;
 }
 
 body:has(#menu0-input:checked) {
