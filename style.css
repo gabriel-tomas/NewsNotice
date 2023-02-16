@@ -616,7 +616,7 @@ section {
     body:has(#menu0-input:checked) > main {
         visibility: hidden;
         transition: 0s visibility .7s;
-        height: 30vh;
+        animation: 0s height-main .7s forwards;
     }
 
     #back {
@@ -707,5 +707,11 @@ section {
 
     to {
         transform: scale(100%);
+    }
+}
+
+@keyframes height-main {
+    to {
+        height: 30vh;
     }
 }
