@@ -80,6 +80,7 @@ header {
     text-align: left;
     padding-left: 40px;
     transition: .2s box-shadow, .3s margin-left;
+    color: black;
 }
 
 .header-rightdiv-menu0-div-item-pdng {
