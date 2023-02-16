@@ -44,7 +44,7 @@ header {
 .header-rightdiv-menu0 {
     display: block;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     top: 0px;
     left: -510px;
