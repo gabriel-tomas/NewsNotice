@@ -616,6 +616,7 @@ section {
     body:has(#menu0-input:checked) > header, body:has(#menu0-input:checked) > main {
         visibility: hidden;
         transition: 0s visibility .7s;
+        height: 30vh;
     }
 
     #back {
