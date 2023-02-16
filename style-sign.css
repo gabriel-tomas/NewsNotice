@@ -114,12 +114,13 @@ main {
 
 @media (max-width: 520px) {
     main {
-        height: fit-content;
+        justify-content: center;
+        background-color: white;
     }
 
     .divright {
-        height: 100vh;
-        gap: 5px;
         border-radius: 0px;
+        box-shadow: none;
+        padding: 30px 50px;
     }
 }
