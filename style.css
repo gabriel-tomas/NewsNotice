@@ -613,6 +613,11 @@ section {
         display: none;
     }
 
+    body:has(#menu0-input:checked) main {
+        visibility: hidden;
+        transition: 0s visibility .7s;
+    }
+
     #back {
         display: none;
     }
